@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <title>GetFit-signup</title>
+        <style>
+p.p1{
+  text-align: center;
+  font-size: 25px;
+  font-family: garamond;
+  color: #0d1717;
+}
+p.p2{
+  font-size: 25px;
+  font-family: garamond;
+  color:#0d1717 ;
+}
+h2{
+  font-size: 35px;
+    text-align: center;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input[type=text] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color:#c39e94;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  border-bottom: 2px solid black;
+}
+input[type=email] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: #c39e94;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  border-bottom: 2px solid black;
+}
+input[type=password] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: #c39e94;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+  border-bottom: 2px solid black;
+}
+.b1{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-family:tw cen mt;
+    padding: 8px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.b1:hover {
+    background-color: #c39e94;
+    color: black;
+  }
+body{
+  background-color: #c39e94;
+}
+</style>
+</head>
+<body><br><br>
+    <h2>Sign up for FREE!</h2>
+    <p class="p1">Are You Excited To Join..? Here Is The Chance!<br>share your valid details with us.</p>
+<center>
+  <form id="clients" name="clients" action="insert.php" method="POST" onsubmit="return validateClient()">
+      <input type="text" placeholder="Uname" id="name" name="name" ><br>
+      <input type="email" placeholder="Email" id="email" name="email"><br>
+      <input type="password" placeholder="Password" id="pass" name="pass"><br><br>
+  <button class="b1">CREATE ACCOUNT</button>
+  </form>
+  <p class="p2">You Already Joined? <a href="file:///C:/wamp64/www/miniproject/login.html"
+                                         style="color: white; font-family: tw cen mt;  text-decoration: none;">Login </a> Here</p>
+  </form>
+  <p id="errorMessages" style="color:red;"></p>
+</center>
+<script type="text/javascript">
+  function validateClient()
+  {
+  //clearing previous errors
+  document.getElementById('errorMessages').innerHTML = '';
+
+    var name=document.getElementById("name").value.trim();
+    var email=document.getElementById("email").value.trim();
+    var password=document.getElementById("pass").value.trim();
+      
+    var errorMessages = [];
+
+    //validate name
+    if (name === "") {
+      errorMessages.push("Username is required.");
+  }
+
+    //validate email
+    if (email === "") 
+    {
+      errorMessages.push("Email is required.");
+  }
+   else
+    {
+      var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      if (!emailPattern.test(email)) 
+      {
+          errorMessages.push("Please enter a valid email address.");
+      }
+  }
+
+    //validate password
+    if (password === "") 
+    {
+      errorMessages.push("Password is required.");
+  } 
+  else if (password.length < 8)
+   {
+      errorMessages.push("Password must be at least 8 characters long.");
+  }
+
+  //displaying error if any occur
+  if (errorMessages.length > 0)
+   {
+      document.getElementById('errorMessages').innerHTML = errorMessages.join('<br>');
+      return false; // Prevent form submission
+  }
+
+  //if no error
+  return true;
+}
+</script>                
+</body>
+</html> 
+
+
+
+    
+      

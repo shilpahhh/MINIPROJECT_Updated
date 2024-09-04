@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <STYLE>
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('header-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+.header-content p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.about-content {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.content-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.content-block img.responsive-img {
+    max-width: 45%;
+    border-radius: 10px;
+}
+
+.content-block p {
+    max-width: 50%;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member .team-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #888;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .content-block {
+        flex-direction: column;
+    }
+
+    .content-block img.responsive-img,
+    .content-block p {
+        max-width: 100%;
+    }
+}
+    </STYLE>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <section class="about-content">
+        <h2>Our Story</h2>
+        <p>Welcome to [Your Website Name]! We are passionate about [Your Industry/Focus]. Our journey began in [Year] with the goal of [Your Mission Statement].</p>
+        
+        <h2>Our Mission</h2>
+        <p>At [Your Website Name], our mission is to [Brief Description of Your Mission]. We strive to provide the best [Products/Services] to our customers.</p>
+        
+        <h2>Our Team</h2>
+        <p>Meet our dedicated team who work tirelessly to bring you the best. We are a group of [Describe Your Team].</p>
+    </section>
+
+    <footer>
+        <p>&copy; [Current Year] [Your Website Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>

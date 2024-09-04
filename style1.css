@@ -1,0 +1,507 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+  /* padding:1em; */
+  min-width:100vw;
+  min-height: 100vh;
+}
+
+.menu{                    /*menu bar*/
+  margin-left: 56px;
+}
+
+nav{
+  float:center;
+}
+.link{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.link.li{
+ margin-left: 20%;
+
+}
+.link a{
+  text-decoration: none;
+  font-size: 23px;
+  font-family:  tw cen mt;
+  color:grey;
+  padding: 20px 0;
+  display: block;
+}
+.link a:hover{
+  color: black;
+  font-size:28px;
+}
+img.i1{                  /*bg image*/
+width: 100%;
+height: auto;
+opacity: 86%;
+}
+.unsplash {
+  display: flex;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.unsplash .text {
+    position:absolute;
+    top:50%;
+    left: 65%;
+    border-radius: 10px;
+}
+h3.h31{
+    color:rgb(225, 235, 245);
+  font-size: 68px;
+  padding-right: 504px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.b1{
+    position: relative;
+    display: flexbox;
+    color: rgb(225, 235, 245);
+    background-color: #1f504e;
+    font-size: 25px;
+    font-family:tw cen mt;
+    padding: 6px;
+    text-align: center;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.4s;
+    width: 25%;
+    right: 255px; 
+}
+.b1:hover 
+{
+  background-color: white;
+  color:black;
+}
+
+.b1 span 
+{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.b1 span:after 
+{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.b1:hover span
+ {
+  padding-right: 25px;
+}
+
+.b1:hover span:after 
+{
+  opacity: 1;
+  right: 0;
+}
+
+    
+                                                       /*page2*/
+ 
+
+ h3.h32
+ {
+  color:black ;
+  font-family:tw cen mt;
+  padding: 20px 0;
+  font-size: 40px;
+}    
+p.pd5{
+  font-size: 20px;
+  padding-left:15px;
+  font-family:tw cen mt;
+  color:grey;
+  margin-bottom:58px;
+  } 
+  .cards1{
+    display: flex;
+    flex-direction: row;
+    
+  }                                             
+p.pd1
+{
+font-size: 20px;
+font-family: tw cen mt;
+color: grey;
+}
+p.ps1
+{
+    font-size: 35px;
+    font-family:tw cen mt;
+   margin-left:45px;
+    color:black;
+}
+p.pd2
+{
+font-size: 20px;
+font-family:tw cen mt;
+color: grey;
+margin-bottom: 120px;
+}
+p.ps2
+{ 
+    font-size: 35px;
+    font-family:tw cen mt; 
+    color:black;
+    margin-left: 34px;
+}
+.cards2{
+  display:flex;
+  flex-direction: row;
+ flex-basis: auto;
+}
+p.pd3
+{
+font-size: 20px;
+font-family:tw cen mt;
+color: gray;
+margin-left: 56px;
+margin-bottom:120px ;
+}
+p.ps3{
+    font-size: 35px;
+font-family:tw cen mt; 
+margin-left: 45px;
+color:black;
+}
+p.pd4{
+    font-size: 20px;
+    font-family: tw cen mt;
+    color: gray;
+    margin-left: 89px;
+    }
+p.ps4{
+    font-size: 35px;
+    font-family:tw cen mt; 
+    color:black;
+    margin-left:40px;
+}
+
+
+@media
+  (max-width: 900px)
+  {
+
+  }
+             
+
+                                                                /*page 3*/
+
+.p1{
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    padding-left: 535px;
+    font-family: garamond;
+    color: black;
+  }
+  p.p2{
+    font-size: 25px;
+    display: flex;
+    padding-left: 585px;
+    padding-top: 26px;
+    font-family: garamond;
+    color:black ;
+  }
+  h3.h34{
+    font-size: 40px;
+      color:black;
+      display: flex;
+      padding-left: 550px;
+      margin: 52px;
+      font-family: tw cen mt;
+  }
+  input[type=text] {
+    width: 20%;
+    background-color: #c39e94;
+    padding: 12px 20px;
+    margin: 8px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 6px;
+    border-bottom: 2px solid black;
+  }
+  input[type=email] {
+    width: 20%;
+    background-color: #c39e94;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 6px;
+  }
+  input[type=password] {
+    width: 20%;
+    background-color: #c39e94;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 6px;
+  }
+
+  .b2{
+    border-radius: 8px;
+      background-color: black;
+      color: white;
+      display: flex;
+      font-size: 15px;
+      font-family:tw cen mt; 
+      padding: 8px;
+      text-align: center;
+      cursor: pointer;
+      transition-duration: 0.4s;
+     
+  }
+  .b2:hover {
+    background-color: #c39e94;
+    color: black;
+  }
+  .b2 span 
+{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.b2 span:after 
+{
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.b2:hover span
+ {
+  padding-right: 25px;
+}
+
+.b2:hover span:after 
+{
+  opacity: 1;
+  right: 0;
+}
+  
+  .page3{
+          background-color:#c39e94;
+          width: 100%;
+  }
+                                          /*page4*/
+img.i2{
+    width:57%;
+    height:auto;
+    margin-left:275px;
+    margin-top: 123px;
+}
+h3.h35{
+    color: rgb(225, 235, 245);
+    display: flex;
+    padding-top: 56px;
+    padding-left:516px;
+    font-family:tw cen mt;
+    font-size: 40px;
+}
+h3.h36{
+  text-align: center;
+font-size: 20px;
+padding-top: 100px;
+font-family: garamond;
+text-indent: 30px;
+color:rgb(225, 235, 245);
+}
+.b3{
+  width: 15%;
+    background-color:black; 
+    position: relative;
+    display: flexbox;
+    top: 32px;
+    left: 550px;
+    color:white;
+    font-size: 20px;
+    font-family:tw cen mt;
+    padding: 5px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.b3:hover {
+  background-color: rgb(225, 235, 245);
+  color: black;
+}
+
+.page4{
+    background-color: #020202;
+    padding: 96px;
+}
+
+                                               /*page5
+
+h3.h310{
+  font-size: 40px;
+  color:black ;
+  font-family:tw cen mt;
+}
+p.p4{
+  text-align: left;
+font-size: 20px;
+font-family: garamond;
+text-indent: 30px;
+color:rgb(217, 222, 222);
+padding-bottom:54px;
+}
+
+.page5.train_list{
+display: flex;
+
+}
+
+.per1{
+  display: flex;
+background-color:rgb(240, 241, 242) ;
+border-radius: 8px;
+width: 27%;
+height: 25%;
+margin-left: 126px;
+}
+p.ps6{
+font-size: 37px;
+  font-family:tw cen mt; 
+  color:black;
+  padding-left: 19px;
+}
+.b4{
+  width:38%;
+  height: 25%;
+  background-color:black; 
+  position: relative;
+  display: flexbox;
+  color:white;
+  font-size: 15px;
+  top:96px;
+  right:45px;
+  font-family:tw cen mt;
+  padding: 5px;
+  text-align: center;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+                 /*trainer 2
+.per2{
+  display: flex;
+background-color:rgb(240, 241, 242) ;
+border-radius: 8px;
+width: 27%;
+height: 25%;
+margin-left:556px;
+bottom: 236px;
+}
+p.ps7{
+font-size: 37px;
+  font-family:tw cen mt; 
+  color:black;
+}
+.b5{
+  width:38%;
+  height: 25%;
+  background-color:black; 
+  position: relative;
+  display: flexbox;
+  color:white;
+  left:187px;
+  top:99px;
+   font-size: 15px;
+  font-family:tw cen mt;
+  padding: 5px;
+  text-align: center;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+            /* trainer 3
+.per3{
+  display: flex;
+background-color:rgb(240, 241, 242) ;
+border-radius: 8px;
+width: 27%;
+height: 25%;
+margin-left:965px;
+
+}
+p.ps8{
+font-size: 37px;
+  font-family:tw cen mt; 
+  color:black;
+}
+.b6{
+  width:38%;
+  height: 25%;
+  background-color:black; 
+  position: relative;
+  display: flexbox;
+  color:white;
+  top:110px;
+  left:190px;
+   font-size: 15px;
+  font-family:tw cen mt;
+  padding: 5px;
+  text-align: center;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.page5{
+  border-radius: 12px;
+background-color:#507F80;
+}
+*/
+                              
+                              /*page6*/
+.page6{
+  background-color: black;/*#124e66;*/
+}
+h3.h38{
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: -4;
+  font-size: 13px;
+  color: grey;
+  font-family: garamond;
+  font-weight:normal;
+}
+h3.h39{
+  display: flex;
+  padding-bottom:25px ;
+  font-size: 13px;
+  color:grey;
+  padding-left: 976px;
+  font-family: garamond;
+  font-weight:normal;
+}
+

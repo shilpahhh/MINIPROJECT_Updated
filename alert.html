@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>getfit-googlesearch</title>
+    </head>
+    <body>
+        <h2 >join with us!</h3>
+        <form id="regform" onsubmit=" return validateForm()">
+<label for="name">name</label><br>
+            <input type="text" placeholder="Uname" id="name" ><br><br>
+
+<label for="email">email</label><br>
+            <input type="email" placeholder="Email" id="email" ><br><br>
+
+<label for="pass">password</label><br>
+            <input type="password" placeholder="Password" id="pass" ><br><br>
+
+            <input type="button" value ="CREATE ACCOUNT">
+        </form>
+<script>
+function validateForm(){
+    var name=document.getElementById("name").value.trim();
+    var email=document.getElementById("email").value.trim();
+    var password=document.getElementById("pass").value.trim();
+if(name=="") {
+alert("enter name");
+return false;
+}
+if(email===""){
+alert("entr email");
+return false;
+}
+var emailRegex=/^[\^s@]+@[\^s@]+\.[^s@]+$/;
+if(!emailRegex.test(email))
+{
+alert("invalid");
+return false;
+}
+if(password==="")
+{
+alert("enter pass";
+return false;
+}
+if(password.length<6){
+alert("need 6 char";
+return false;
+}
+alert("form submitted");
+</script>
+</body>
+</html>

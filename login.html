@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>GetFit-login</title>
+        <style>
+ 
+ .log{
+  margin-top: 95px;
+  margin-left: 585px;
+  border-radius: 12px;
+  width: 40%;
+  height: 56%;
+
+ }
+body{
+ 
+ background-repeat: no-repeat;
+}
+h2{
+  padding-right: 60px;
+  font-size: 35px;
+    text-align: center;
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3{
+  padding-right:86px;
+  font-size: 20px;
+    text-align: center;
+    color:black;
+    font-family: garamond;
+}
+ input[type=text] {
+  width: 47%;
+  border-radius: 5px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+}
+    .b3{
+    background-color:black;
+    color: white;
+    font-size: 15px;
+    margin-right: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    padding: 8px;
+    text-align: center;
+    border-radius: 7px;
+   cursor: pointer;
+   width: 24%;
+}
+.b3:hover {
+    background-color:white;
+    color: black;
+  }
+
+
+        </style>
+    </head>
+          <body background="./wgt.jpg">
+          <div class="log"><br>
+        <h2>Sign-In HERE!</h2><br>
+        <center>
+            <form id="login" name="login"  action="./login_selection.php" method="POST" onsubmit="return validateLogin()">
+              <h3>Enter the Username</h3>
+                <input type="text" id="name" name="name" ><br><br>
+                <h3>Enter the unique ID </h3>
+                <input type="text"  id="client_id" name="client_id" ><br><br>
+            <button class="b3">SUBMIT</button>
+            </form>
+            <p id="errorMessages" style="color:red;"></p>
+          </center>
+        </div>
+        </div>
+        <script type="text/javascript">
+          function validateLogin()
+          {
+          //clearing previous errors
+          document.getElementById('errorMessages').innerHTML = '';
+      
+            var name=document.getElementById("name").value.trim();
+            var client_id=document.getElementById("client_id").value.trim();
+              
+            var errorMessages = [];
+      
+            //validate name
+            if (name === "") 
+            {
+              errorMessages.push("Username is required.");
+          }
+      
+            //validate id
+            if ( client_id=== "") 
+            {
+              errorMessages.push("ID is required.");
+  
+            }
+          //displaying error if any occur
+          if (errorMessages.length > 0)
+           {
+              document.getElementById('errorMessages').innerHTML = errorMessages.join('<br>');
+              return false;
+               // Prevent form submission
+          }
+      
+          //if no error
+          return true;
+        }
+        </script>             
+        
+
+</body>
+</html> 
+  
